@@ -5,9 +5,14 @@ import { AppComponent } from "./app.component";
 import { PassVaccinalComponent } from "./view-model/pass-vaccinal/pass-vaccinal.component";
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
+import { DemandePriorisationComponent } from "./view-model/demande-priorisation/demande-priorisation.component";
 
 @NgModule({
-  declarations: [AppComponent, PassVaccinalComponent],
+  declarations: [
+    AppComponent,
+    PassVaccinalComponent,
+    DemandePriorisationComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [RouterModule],
   bootstrap: [AppComponent],

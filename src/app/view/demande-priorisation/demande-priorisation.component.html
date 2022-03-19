@@ -1,0 +1,8 @@
+<form #formulaire="ngForm">
+    <label for="">Numéro d'inscription: </label>
+    <input required id="numInscription" type="text" ngModel name="numInscription" class="form-control">
+
+  
+    <button (click)="addDemandePriorisation(formulaire)"> Envoyer la demande</button>
+
+</form>
