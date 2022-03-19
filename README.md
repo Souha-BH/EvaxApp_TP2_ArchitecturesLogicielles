@@ -1,3 +1,12 @@
+## Explaining the choice of the architecture
+
+MVVM guides us through distributing responsibilities between classes in a GUI application (or between layers), with the goal of having a small number of classes, while keeping the number of responsibilities per class small and well defined.
+
+## Explaining the choice of Angular Framework
+
+Angular framework is embedded with original MVC but it’s more of an MVVM software architectural setup. Angular does not ask developers to split an application into different MVC components and build a code that could unite them.
+Its framework uses the MVVM(Model-View-ViewModel) architecture better than an MVC (Model-View-Controller) one. The MVVM model supports two-way data binding between View and ViewModel. This allows the automatic propagation to change within ViewModel’s state to the view. Typically, ViewModel uses the observer model to inform changes to the ViewModel model to model.
+
 # EvaxApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
