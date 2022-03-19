@@ -1,0 +1,45 @@
+<div id="input-container">
+  <div class="mb-1">Entrez l'ID de l'utilisateur:</div>
+  <div class="input-group mb-5" style=" width: 400px">
+    <input
+      [(ngModel)]="numInscription"
+      id="num-inscri"
+      type="text"
+      class="form-control"
+      placeholder="numéro d'inscription"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      (click)="updateCitoyen()"
+    >
+      >
+    </button>
+  </div>
+</div>
+<div *ngIf="citoyen" id="citoyen-container">
+  <h1 id="title">Attestation de vaccination</h1>
+  <p class="mb-4"><b>numéro inscription:</b> {{ citoyen.numInscription }}</p>
+  <p class="mb-4">
+    <b>nom et prénom:</b> {{ citoyen.firstName | titlecase }}
+    {{ citoyen.lastName | titlecase }}
+  </p>
+  <p class="mb-4"><b>CIN:</b> {{ citoyen.cin }}</p>
+  <p class="mb-4"><b>Date de naissance:</b> {{ citoyen.birthdate }}</p>
+  <hr class="mt-5" />
+  <div class="d-flex">
+    <div class="col-1 mt-1"><b>vaccins:</b></div>
+    <div>
+      <div
+        class="vaccin-detail-container col-8"
+        *ngFor="let vaccin of citoyen.vaccins; let i = index"
+      >
+        <p class="mb-1">Dose numéro {{ i+1 }}: {{ vaccin.type }}</p>
+        <p>Date: {{ vaccin.date }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button type="button" class="btn btn-success">Imprimer</button>
+  </div>
+</div>
