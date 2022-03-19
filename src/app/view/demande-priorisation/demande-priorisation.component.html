@@ -1,8 +1,95 @@
-<form #formulaire="ngForm">
-    <label for="">Numéro d'inscription: </label>
-    <input required id="numInscription" type="text" ngModel name="numInscription" class="form-control">
-
-  
-    <button (click)="addDemandePriorisation(formulaire)"> Envoyer la demande</button>
-
+<form #formulaire="ngForm" class="container">
+  <div class="mb-3">
+    <label for="numInscription" class="form-label"
+      >Numéro d'inscription:
+    </label>
+    <input
+      required
+      id="numInscription"
+      class="form-control"
+      type="text"
+      [(ngModel)]="numInscription"
+      name="numInscription"
+      class="form-control"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="firstname" class="form-label">Prénom: </label>
+    <input
+      required
+      id="firstname"
+      class="form-control"
+      type="text"
+      [(ngModel)]="firstname"
+      name="firstname"
+      class="form-control"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="lastname" class="form-label">Nom: </label>
+    <input
+      required
+      id="lastname"
+      class="form-control"
+      type="text"
+      [(ngModel)]="lastname"
+      name="lastname"
+      class="form-control"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="cin" class="form-label">Numéro de CIN:</label>
+    <input
+      required
+      id="cin"
+      class="form-control"
+      type="text"
+      [(ngModel)]="cin"
+      name="cin"
+      class="form-control"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="birthdate" class="form-label"
+      >Date de naissance DD/MM/YYYY :
+    </label>
+    <input
+      required
+      id="birthdate"
+      class="form-control"
+      type="text"
+      [(ngModel)]="birthdate"
+      name="birthdate"
+      class="form-control"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="cause" class="form-label"
+      >Indiquer la cause de votre demande :
+    </label>
+    <input
+      required
+      id="cause"
+      class="form-control"
+      type="text"
+      [(ngModel)]="cause"
+      name="cause"
+      class="form-control"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="dateDesiree" class="form-label">dateDesiree DD/MM/YYYY :</label>
+    <input
+      required
+      id="dateDesiree"
+      class="form-control"
+      type="text"
+      [(ngModel)]="dateDesiree"
+      name="dateDesiree"
+      class="form-control"
+    />
+  </div>
+  <button (click)="addDemandePriorisation(formulaire)" class="btn btn-primary">
+    Envoyer la demande
+  </button>
 </form>

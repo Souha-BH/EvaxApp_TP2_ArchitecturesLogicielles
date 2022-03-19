@@ -1,5 +1,3 @@
-import { Citoyen } from "./Citoyen";
-
 export class DemandePriorisation {
   constructor(
     public numInscription: string,
@@ -8,7 +6,6 @@ export class DemandePriorisation {
     public cin: string,
     public birthdate: string,
     public cause: string,
-    public dateDesiree: string,
-    public citoyen: Citoyen
+    public dateDesiree: string
   ) {}
 }

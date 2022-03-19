@@ -1,6 +1,6 @@
 <div id="input-container">
   <div class="mb-1">Entrez l'ID de l'utilisateur:</div>
-  <div class="input-group mb-5" style=" width: 400px">
+  <div class="input-group mb-5" style="width: 400px">
     <input
       [(ngModel)]="numInscription"
       id="num-inscri"
@@ -34,7 +34,7 @@
         class="vaccin-detail-container col-8"
         *ngFor="let vaccin of citoyen.vaccins; let i = index"
       >
-        <p class="mb-1">Dose numéro {{ i+1 }}: {{ vaccin.type }}</p>
+        <p class="mb-1">Dose numéro {{ i + 1 }}: {{ vaccin.type }}</p>
         <p>Date: {{ vaccin.date }}</p>
       </div>
     </div>
