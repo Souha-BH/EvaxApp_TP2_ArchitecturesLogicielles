@@ -3,11 +3,11 @@ import { Citoyen } from "../../model/entity/Citoyen";
 import { CitoyenDao } from "../../model/dao/CitoyenDao";
 
 @Component({
-  selector: "app-pass-covid",
-  templateUrl: "../../view/pass-covid/pass-covid.component.html",
-  styleUrls: ["../../view/pass-covid/pass-covid.component.css"],
+  selector: "app-pass-vaccinal",
+  templateUrl: "../../view/pass-vaccinal/pass-vaccinal.component.html",
+  styleUrls: ["../../view/pass-vaccinal/pass-vaccinal.component.css"],
 })
-export class PassCovidComponent implements OnInit {
+export class PassVaccinalComponent implements OnInit {
   citoyen: Citoyen | undefined;
   numInscription: string = "";
 

@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { PassCovidComponent } from "./pass-covid.component";
+import { PassVaccinalComponent } from "./pass-vaccinal.component";
 
-describe("PassCovidComponent", () => {
-  let component: PassCovidComponent;
-  let fixture: ComponentFixture<PassCovidComponent>;
+describe("PassVaccinalComponent", () => {
+  let component: PassVaccinalComponent;
+  let fixture: ComponentFixture<PassVaccinalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PassCovidComponent],
+      declarations: [PassVaccinalComponent],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PassCovidComponent);
+    fixture = TestBed.createComponent(PassVaccinalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
