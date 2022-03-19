@@ -1,3 +1,8 @@
+# Binome
+
+Souha Ben Hassine & Cyrine Zaouali
+GL4
+
 ## Explaining the choice of the architecture
 
 MVVM guides us through distributing responsibilities between classes in a GUI application (or between layers), with the goal of having a small number of classes, while keeping the number of responsibilities per class small and well defined.
